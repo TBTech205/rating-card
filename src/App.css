@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey:  hsl(213, 19%, 18%);;
+    --DarkBlue: #1c232d;
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+
+
+body {
+  background: var(--VeryDarkBlue);
+  font-family: "Overpass";
+}
+
+.rateing-card-wraper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rateing-card {
+    width: 310px;
+    height: 300px;
+    padding: 30px;
+    background: var(--DarkBlue);
+    border-radius: 25px;
+}
+
+.rateing-card .star {
+    border-radius: 100%;
+    padding: 10px;
+    background: var(--MediumGrey);
+}
+.rateing-card .title {
+    font-weight: 700;
+    color: var(--White);
+    margin-bottom: 4px;
+}
+.rateing-card .desc {
+    color: var(--LightGrey);
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons .rateing {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: var(--White);
+    background: var(--MediumGrey)
+}
+
+.buttons .rateing:hover {
+    background: var(--LightGrey);
+}
+.buttons .rateing:focus {
+    background: var(--Orange);
+}
+
+.submit {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: var(--White);
+    background: var(--Orange);
+    border-radius: 40px;
+}
+.submit:focus {
+    color: var(--Orange);
+    background: var(--White);
+}
+
+.thanks {
+    width: 310px;
+    height: 300px;
+    padding: 30px;
+    background: var(--DarkBlue);
+    border-radius: 25px;
+    text-align: center;
+}
+.thanks .illustration {
+    margin-bottom: 10px;
+}
+.thanks .chip {
+    margin: auto;
+    width: fit-content;
+    margin-top: 5px;
+    padding: 10px;
+    color: var(--Orange);
+    background: var(--MediumGrey);
+    border-radius: 25px;   
+}
+
+.thanks .title {
+    font-weight: 700;
+    color: var(--White);
+    margin-bottom: 4px;
+}
+.thanks .desc {
+    color: var(--LightGrey);
+    font-size: 14px;
+}
