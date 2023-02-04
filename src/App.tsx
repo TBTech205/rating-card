@@ -16,7 +16,7 @@ export default function App() {
     
     return isSubmitted ? (
         <div className='rateing-card-wraper thanks'>
-            <img src='/thank-you.svg' className='illustration' />
+            <img src='/thank-you.svg' className='illustration' alt="thank you image" />
             <div className='chip'>You selected {selectedRating} out of 5</div>
             <h1 className='title'>Thank you!</h1>
             <p className='desc'>
@@ -26,7 +26,7 @@ export default function App() {
     ) : (
         <form onSubmit={handleFormSubmit} className='rateing-card-wraper'>
             <div className='rateing-card'>
-                <img src='/icon-star.svg' className='star' />
+                <img src='/icon-star.svg' className='star' alt="star image" />
 
                 <h1 className='title'>How did we do?</h1>
 
